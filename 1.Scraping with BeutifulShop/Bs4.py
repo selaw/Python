@@ -11,6 +11,3 @@ resp=urllib.request.urlopen(req)
 soup = bs.BeautifulSoup(resp,'html')
 
 #print(soup.title)
-
-for link in soup.find_all('a'):
-    print(link.string)
